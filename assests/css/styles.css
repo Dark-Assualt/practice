@@ -97,10 +97,12 @@ a:hover {
 }
 
 .swiper {
+    border-radius: 20px;
     width: 100%;
     height: 100%;
   }
   .swiper-slide {
+
     display: flex;
     justify-content: center;
     align-items: center;
