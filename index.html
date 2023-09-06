@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>NavBar</title>
+</head>
+<body>
+    <!---NAvigation Bar-->
+    <header>
+        <div class="container flex">
+            <!--Logo-->
+            <div class="logo">
+                <img src="https://uploads-ssl.webflow.com/5d3ead70b1eba4033920a2bd/60cc028afb6316268956b305_1.MentorPassLogo-p-500.png" alt="logo">
+            </div>
+            <!--nav items-->
+            <nav id="nav" class="navigation ">
+
+                <ul class="nav_items">
+                    <li class="items" ><a href="#">home</a></li>
+                    <li class="items"><a href="#">about</a></li>
+                    <li class="items"><a href="#">privacy</a></li>
+                    <li class="items"><a href="#">list</a></li>
+                </ul>
+                <div class="nav_buttons">
+                <button class="btn btn-1">ask a question</button>
+                <button class="btn btn-2">contact</button>
+            </div>
+            </nav>
+            <!--Menu Button phone-->
+            <menu id="menu">
+                    &#9776;
+                </menu>
+            
+            
+        </div>
+    </header>
+
+    <!--Sliding Content-->
+    <div class="movingContainer">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper moving"></div>
+            <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+
+    <!--Sliding JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!--My JS-->
+    <script src="./assests/js/script.js"></script>
+
+</body>
+</html>
