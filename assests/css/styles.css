@@ -165,7 +165,14 @@ a:hover {
     .movingContainer{
         margin: auto;
         width: 80vw;
-        height: 30vh;
+        height: 50vh;
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .movingContainer{
+        height: 30vh;
+    }
+}
+
