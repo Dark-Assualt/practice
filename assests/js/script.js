@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "NES Controller",
             link: "https://images.pexels.com/photos/1637436/pexels-photo-1637436.jpeg",
         },
-        // {
-        //     name: "Switch",
-        //     link: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
-        // },
+        {
+            name: "Switch",
+            link: "https://images.pexels.com/photos/371924/pexels-photo-371924.jpeg",
+        },
         {
             name: "SetUp",
             link: "https://images.pexels.com/photos/1038916/pexels-photo-1038916.jpeg",
