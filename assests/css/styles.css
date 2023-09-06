@@ -91,7 +91,7 @@ a:hover {
 }
 
 .movingContainer{
-    margin: 1.25rem auto;
+    margin:auto;
     width: calc(var(--header-size) * 15);
     height: calc(var(--header-size) * 8);
 }
@@ -109,7 +109,8 @@ a:hover {
   .swiper-slide img {
     border-radius: 20px;
     width: 100%;
-    height: 100%;
+    height:100%;
+    object-fit: cover;
   }
 
 
