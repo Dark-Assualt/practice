@@ -159,8 +159,9 @@ a:hover {
         transform: scale(1,1);
     }
 
-    .movingContainer{
+    .movingContainer img{
         width: 80%;
         height: 80%;
+        object-fit: cover;
     }
 }
