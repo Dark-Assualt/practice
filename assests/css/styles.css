@@ -53,6 +53,7 @@ header {
 .container {
     margin: 0 3.375rem;
     height: var(--header-size);
+    flex: 1;
     justify-content: space-between;
     align-items: center;
 }
@@ -155,9 +156,6 @@ a:hover {
 
 @media screen and (max-width: 1000px) {
 
-    .container{
-        position: relative;
-    }
     .navigation {
         flex-direction: column;
         position: fixed;
