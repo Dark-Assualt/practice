@@ -96,7 +96,7 @@ a:hover {
 .movingContainer{
     margin: 1.25rem 20%;
     /* width: calc(var(--header-size) * 15); */
-    height: calc(var(--header-size) * 8);
+    height: 60vh;
 }
 
 .swiper {
@@ -118,43 +118,10 @@ a:hover {
     object-fit: cover;
   }
 
-  /* Feature */
-
-  .features{
-    margin: 6rem 20%;
-    padding: 3%;
-    background-color: grey;
-    opacity: 0.4;
-  }
-
-  .feature {
-    gap: 2rem;
-  }
-  .feature img {
-    width: 50%;
-  }
-
-  .feature:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .explain {
-    align-self: center;
-    font-family: var(--nav-font);
-  }
-
-  .heading {
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-
-  .detail {
-    margin: 0 10%;
-  }
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
     .navigation {
         flex-direction: column;
@@ -192,14 +159,12 @@ a:hover {
 
     .menuActive {
         right: 0;
-        /* display: flex; */
         transition: all 0.8s ease-in-out;
-        /* transform: translateX(0); */
     }
 
     .movingContainer{
-        margin: 1.25rem auto;
-        width: 80%;
+        margin: 1.25rem 5%;
+        height: 45vh;
     }
 
    
@@ -213,3 +178,64 @@ a:hover {
     }
 }
 
+  /* Feature */
+
+  .grid_section {
+    background: linear-gradient( rgb(0, 0, 0), rgb(97, 95, 95), rgb(110, 109, 109) ) ;
+  }
+
+  .features{
+    margin: 6rem 20%;
+    padding: 3%;
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+
+  .feature {
+
+    border: 5px solid rgba(146, 145, 145, 0.4);
+    border-radius: 10px;
+    grid-column: 1/5;
+    gap: 2rem;
+  }
+  .feature img {
+    align-self: center;
+    padding: 20px;
+    width: 50%;
+  }
+
+
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .explain {
+    align-self: center;
+    font-family: var(--nav-font);
+  }
+
+  .heading {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .detail {
+    margin: 0 5%;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .feature {
+        flex-direction: column;
+    }
+
+    .feature:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .detail {
+        margin-bottom: 5%;
+    }
+  }
