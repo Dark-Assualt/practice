@@ -37,6 +37,7 @@ button {
 }
 
 header {
+
     box-shadow: rgba(32, 4, 192, 0.3) 0px 48px 100px 0px;
 }
 
@@ -60,7 +61,7 @@ header {
     
     display: flex;
     justify-content: end;
-    flex-basis: 60%;
+    flex: 1;
     justify-content: space-between;
 }
 
@@ -119,7 +120,10 @@ a:hover {
   /* Feature */
 
   .features{
-    margin: 1.25rem 20%;
+    margin: 6rem 20%;
+    padding: 3%;
+    background-color: grey;
+    opacity: 0.4;
   }
 
   .feature {
@@ -139,27 +143,32 @@ a:hover {
   }
 
   .heading {
+    margin-bottom: 0.5rem;
     text-align: center;
+  }
+
+  .detail {
+    margin: 0 10%;
   }
 
 
 
 @media screen and (max-width: 1000px) {
 
-    
+    .container{
+        position: relative;
+    }
     .navigation {
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         background-color: black;
         border-radius: 10px;
         /* width: 100%; */
-        left: 65%;
+        right: -150px;
         top: 9%;
-        transition-timing-function: ease-out;
-        transition: 0.8s;
+        transition: all 0.8s ease-in-out;
         justify-content: start;
-        transform: translateX(100%);
-        z-index: 999;
+        z-index: 100;
     }
     
     .items{
@@ -184,9 +193,10 @@ a:hover {
     }
 
     .menuActive {
-        transition-timing-function: ease-in;
-        transition: 0.4s;
-        transform: translateX(0);
+        right: 0;
+        /* display: flex; */
+        transition: all 0.8s ease-in-out;
+        /* transform: translateX(0); */
     }
 
     .movingContainer{
