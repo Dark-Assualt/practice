@@ -14,6 +14,7 @@
 }
 body{
     background-color: black;
+    color: white;
 }
 
 ul{
@@ -115,6 +116,20 @@ a:hover {
     object-fit: cover;
   }
 
+  /* Feature */
+
+  .features{
+    margin: 1.25rem 20%;
+  }
+  .feature{
+    display: flex;
+  }
+
+  .feature:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+
 
 @media screen and (max-width: 1000px) {
 
@@ -124,14 +139,13 @@ a:hover {
         position: absolute;
         background-color: black;
         border-radius: 10px;
-        width: 100%;
+        /* width: 100%; */
         left: 65%;
         top: 9%;
         transition-timing-function: ease-out;
-        transition: 0.4s;
+        transition: 0.8s;
         justify-content: start;
-        transform: scale(0,1);
-        transform-origin: right;
+        transform: translateX(100%);
         z-index: 999;
     }
     
@@ -159,7 +173,7 @@ a:hover {
     .menuActive {
         transition-timing-function: ease-in;
         transition: 0.4s;
-        transform: scale(1,1);
+        transform: translateX(0);
     }
 
     .movingContainer{

@@ -1,5 +1,10 @@
 var menu = document.getElementById("menu");
 var box = document.getElementById("nav");
+menu.addEventListener('click', () => {
+    box.classList.toggle("menuActive");
+})
+
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -18,9 +23,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
-menu.addEventListener('click', () => {
-    box.classList.toggle("menuActive");
-})
+
 
 document.addEventListener("DOMContentLoaded", () => {
     var images=[
