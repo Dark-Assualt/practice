@@ -227,6 +227,9 @@ a:hover {
   }
 
   @media only screen and (max-width: 1100px) {
+    .features{
+        margin: 0 5%;
+    }
     .feature {
         flex-direction: column;
     }
@@ -234,6 +237,10 @@ a:hover {
     .feature:nth-child(even) {
         flex-direction: column;
     }
+
+    .feature img {
+        width: 70%;
+      }
 
     .detail {
         margin-bottom: 5%;

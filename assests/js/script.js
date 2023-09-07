@@ -75,10 +75,51 @@ document.addEventListener("DOMContentLoaded", () => {
         var swipe = document.createElement("Div");
         swipe.className += "swiper-slide";
         console.log("swipe")
-        var img = document.createElement("img");
+        let img = document.createElement("img");
         img.src = image.link;
         img.alt = image.name;
         swipe.appendChild(img);
         container.appendChild(swipe);
+    })
+
+    var features = [
+        {
+            heading: "Drill Milling Machine",
+            url: "https://images.pexels.com/photos/50691/drill-milling-milling-machine-drilling-50691.jpeg?auto=compress&cs=tinysrgb&w=300",
+        },
+        {
+            heading: "Pistons",
+            url: "https://images.pexels.com/photos/190539/pexels-photo-190539.jpeg?auto=compress&cs=tinysrgb&w=300"
+        },
+        {
+            heading: "Gears",
+            url: "https://images.pexels.com/photos/159275/macro-focus-cogwheel-gear-159275.jpeg?auto=compress&cs=tinysrgb&w=300"
+        },
+        {
+            heading: "Mining",
+            url: "https://images.pexels.com/photos/1579356/pexels-photo-1579356.jpeg?auto=compress&cs=tinysrgb&w=300"
+        }
+    ]
+    var contain_feature = document.querySelector(".features")
+    features.forEach((feature) => {
+        let con_f = document.createElement("Div");
+        con_f.classList.add("feature", "flex");
+        let explain = document.createElement("Div");
+        explain.classList.add("explain");
+        let img = document.createElement("img");
+        img.src = feature.url;
+        img.alt = feature.heading;
+        let heading = document.createElement("h2")
+        heading.classList.add("heading")
+        heading.innerHTML = feature.heading
+        let details= document.createElement("p")
+        details.classList.add("detail")
+        details.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt esse enim deserunt nihil eveniet praesentium, libero inventore tenetur doloribus dignissimos fuga aperiam quidem mollitia, totam in ad est placeat similique reprehenderit fugiat magni quas sit molestias! Sit animi recusandae unde."
+       console.log(details)
+        explain.appendChild(heading)
+        explain.append(details)
+        con_f.appendChild(img)
+        con_f.append(explain)
+        contain_feature.appendChild(con_f)
     })
 })
